@@ -9,7 +9,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.backgroundColor};
+    background: ${({ theme }) => theme.backgroundColor};
     font-size: 16px;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;
